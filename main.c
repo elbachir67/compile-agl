@@ -12,7 +12,6 @@ int main(int argc, char const *argv[])
     int n, res;
     store(&n);
     print(n);
-        
     return 0;
 }
 

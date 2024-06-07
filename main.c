@@ -3,21 +3,23 @@
 int div(int, int );
 int parite(int);
 void print(int);
-
+void store(int*);
 
 int main(int argc, char const *argv[])
 {
     printf("Travaux Diriges 1 : \n");
     printf("Exercice 1 : Nombre pair\n");
     int n, res;
-
-    printf("Un nombre > 0 : ");
-    scanf("%d", &n);
+    store(&n);
     print(n);
         
     return 0;
 }
 
+void store(int* x){
+    printf("Un nombre > 0 : ");
+    scanf("%d", x);
+}
 void print(int x){
     int res = parite(x);
 
